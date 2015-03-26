@@ -1,0 +1,40 @@
+.party  {
+	h3	{
+		text-align: center;
+		font-size: 28px;
+		margin-bottom: 20px;
+		color: $gray;
+	}
+	.maidman  {
+		display: inline-block;
+		width: 100%;
+		clear: both;
+		margin-bottom: 20px;
+		img {
+			display: inline-block;
+			width: 32.5%;
+			float: left;
+			margin-right: 5%;
+			border: 3px solid $gray;
+			border-radius: 100%;
+			box-sizing: border-box;
+		}
+		h4  {
+			font-size: 22px;
+			padding-top: 20px;
+		}
+		h5  {
+			font-size: 15px;
+			font-weight: 300;
+			span  {
+				padding: 0 5px;
+				color: $gray;
+			}
+		}
+		h4,h5  {
+			width: 62.5%;
+			display: inline-block;
+			float: left;
+		}
+	}
+}

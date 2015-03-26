@@ -1,0 +1,43 @@
+.photos	{
+	#slides	{
+		text-align: center;
+		img	{
+			width: 100% !important;
+		}
+		.slidesjs-navigation	{
+			display: none;
+		}
+		.slidesjs-pagination-item	{
+			display: inline-block;
+			margin-top: 10px;
+			float: left;
+			width: 8.2%;
+			margin-right: 2%;
+			a    {
+				@include transition(all, 0.3s, linear);
+				background-color: $gray;
+				color: $gray;
+				display: block;
+				height: 30px;
+				&:hover	{
+					color: darken($gray, 10%);
+					background-color: darken($gray, 10%);
+				}
+				&.active	{
+					color: $green;
+					background-color: $green;
+				}
+			}
+			&:nth-child(10n)	{
+				margin-right: 0;
+			}
+		}
+	}
+	p    {
+		text-align: center;
+		a:hover	{
+			@include transition(all, .1s, linear);
+			color: darken($green, 15%);
+		}
+	}
+}

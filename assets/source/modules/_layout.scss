@@ -1,0 +1,257 @@
+body	{
+	background: $grayLight;
+}
+
+nav	{
+	&.expanded	{
+		display: block;
+	}
+}
+
+.sidr        {
+        display:none;
+        position:absolute;
+        position:fixed;
+        top:0;
+        height:100%;
+        z-index:999999;
+        width:220px;
+        overflow-x:none;
+        overflow-y:auto;
+        background:$grayLight;
+        color:$grayDark;
+        @include box-shadow(5px, 0px, 20px, -5px, $grayDark);
+        nav	{
+        	background: $grayLight;
+        	height: 100%;
+        	width: 220px;
+        	&:hover	{
+        		background: $grayLight;
+        	}
+        }
+        .sidr-inner        {
+        padding:0 0 15px;
+        }
+        &.left        {
+        left:-220px;
+        right: auto;
+        }
+        ul        {
+        display:block;
+        margin:0;
+        padding-left: 0;
+                li        {
+                display:block;
+                margin:0;
+                border-bottom:2px dashed $gray;
+                height: 50px;
+                        a        {
+                                color: $grayDark;
+                                display: block;
+                                padding: 10px;
+                                line-height: 30px;
+                                box-sizing: border-box;
+                                height: 50px;
+                                &:hover        {
+                                        background-color: $gray;
+                                        color: #fff;
+                                        @include transition(all, 0.3s, ease-in-out);
+                                }
+                        }
+                }
+        }
+}
+
+#menu	{
+	@include box-shadow(0, 2px, 7px, rgba(0, 0, 0, 0.7));
+	@include transition(all, .3s, linear);
+	color: $grayLight;
+	display: none;
+	line-height: 30px;
+	position: fixed;
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;
+	span	{
+		@include transition(all, 0.3s, ease-in-out);
+		color: $grayLight;
+		display: inline-block;
+		box-sizing: border-box;
+		padding: 15px;
+		background: darken($green, 10%);
+		text-align: center;
+		&:hover	{
+			background: darken($green, 15%);
+			cursor: pointer;
+			text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+		}
+	}
+}
+
+.container	{
+	max-width: 1200px;
+	margin: auto;
+}
+
+.main	{
+	padding: 0 20px;
+
+	.spacer	{
+		display: block;
+		padding-bottom: 50px;
+	}
+
+	section	{
+		background: #ffffff;
+		border: 1px solid $gray;
+		margin: 10px 0;
+		padding: 40px;
+	}
+}
+
+.content	{
+	max-width: 800px;
+	margin: auto;
+}
+
+.row	{
+	display: inline-block;
+	width: 100%;
+	clear: both;
+}
+
+.col-two	{
+	width: 45%;
+	float: left;
+	margin-right: 10%;
+	&.last	{
+		margin-right: 0;
+	}
+}
+
+
+@media (max-width: 940px)	{
+	nav	{
+		&.expanded	{
+			display: none;
+		}
+	}
+	#menu	{
+		display: block;
+	}
+	.main .spacer  {
+		padding-bottom: 10px;
+	}
+	.col-two	{
+	width: 100% !important;
+	float: none;
+	margin: 0 !important;
+	}
+	.party  {
+		.maidman  {
+			width: 60%;
+			margin-left: 20%;
+		}
+	}
+}
+
+@media (max-width: 640px)	{
+	.main  {
+		padding: 0 10px;
+	}
+	header #hero	{
+		height: 350px !important;
+		background-repeat: no-repeat;
+		h1	{
+			font-size: 46px;
+			span	{
+				font-size: 70px;
+			}
+		}
+		h2	{
+			font-size: 18px;
+			font-weight: 500;
+			line-height: 20px;
+			letter-spacing: 3px;
+		}
+		.countdown	{
+			.time	{
+				display: inline-block;
+				width: 60px;
+			}
+			.number	{
+				display: block;
+				font-weight: 500;
+			}
+			span    {
+				color: rgba(255,255,255,0.9);
+				bottom: 5px;
+				font-family: $lato;
+				font-weight: 500;
+				font-size: 16px;
+				text-shadow: 1px 2px 5px rgba(0,0,0,0.7);
+			}
+		}
+	}
+	section	{
+		h2	{
+			font-size: 18px;
+			line-height: 28px;
+		}
+	}
+	.registry	{
+		.col-four	{
+			float: none;
+			display: block;
+			width: 200px;
+			height: 100px;
+			margin: 10px auto;
+			&.last	{
+				margin: 10px auto;
+			}
+		}
+	}
+	.party  {
+		.maidman  {
+			width: 100%;
+			margin-left: 0;
+			h4  {
+				padding-top: 0;
+				font-size: 18px;
+			}
+			h5  {
+				font-size: 14px;
+			}
+		}
+	}
+	.photos #slides  {
+		.slidesjs-pagination-item	{
+			width: 18%;
+			margin-right: 2.5%;
+			a    {
+				@include transition(all, 0.3s, linear);
+				background-color: $gray;
+				color: $gray;
+				display: block;
+				height: 30px;
+				&:hover	{
+					color: darken($gray, 10%);
+					background-color: darken($gray, 10%);
+				}
+				&.active	{
+					color: $green;
+					background-color: $green;
+				}
+			}
+			&:nth-child(5n)	{
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 400px)	{
+	header #hero	{
+		background-position: -50px 0 !important;
+	}
+}

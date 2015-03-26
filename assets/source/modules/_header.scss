@@ -1,0 +1,108 @@
+header	{
+	nav	{
+		@include box-shadow(0, 2px, 5px, rgba(0, 0, 0, 0.35));
+		@include transition(.3s, all, linear);
+		background: rgba(149,199,164,.75);
+		display: block;
+		position: fixed;
+		height: 50px;
+		width: 100%;
+		z-index: 1000;
+		&:hover	{
+			background: rgba(149,199,164,1.0);
+		}
+		.initials	{
+			background: $green;
+			opacity: .75;
+			font-family: $thirstyLight;
+			height: 50px;
+			width: 50px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			color: #ffffff;
+			line-height: 50px;
+			text-align: center;
+			&:hover	{
+				background: darken($green, 10%);
+				text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+			}
+		}
+		ul	{
+			list-style-type: none;
+			line-height: 50px;
+			width: 100%;
+			text-align: center;
+			font-size: 16px;
+			text-transform: uppercase;
+			li	{
+				display: inline;
+				a	{
+					padding: 0px 20px;
+					color: $grayLight;
+					display: inline-block;
+					height: 50px;
+					&:hover	{
+						background: darken($green, 10%);
+						text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+					}
+				}
+			}
+		}
+	}
+
+
+	#hero	{
+		background: url('img/hero.jpg');
+		background-size: cover;
+		padding-top: 50px;
+		text-align: center;
+		h1,h2	{
+			color: rgba(255,255,255,0.9);
+			font-family: $thirstyLight;
+			font-style: italic;
+			line-height: 70px;
+			text-shadow: 1px 2px 5px rgba(0,0,0,0.7);
+		}
+		h1	{
+			font-size: 100px;
+			margin-top: 20%;
+			letter-spacing: 3px;
+			opacity: 0.8;
+			span  {
+				font-size: 120px;
+				color: rgba(255,255,255,0.9);
+			}
+		}
+		h2	{
+			font-size: 28px;
+			font-family: $lato;
+			font-style: normal;
+			font-weight: 300;
+			letter-spacing: 5px;
+		}
+		.countdown	{
+			text-align: center;
+			margin-top: 30px;
+			.time	{
+				display: inline-block;
+				width: 80px;
+			}
+			.number	{
+				display: block;
+				font-weight: 500;
+				line-height: 10px;
+				letter-spacing: 1px;
+			}
+			span    {
+				color: rgba(255,255,255,0.9);
+				bottom: 5px;
+				font-family: $lato;
+				font-weight: 100;
+				font-size: 18px;
+				text-shadow: 1px 2px 5px rgba(0,0,0,0.8);
+			}
+		}
+
+	}
+}

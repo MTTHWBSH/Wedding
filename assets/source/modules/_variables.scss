@@ -1,0 +1,28 @@
+// colors
+$grayLight: #f7f7f7;
+$gray: #cccccc;
+$grayDark: #7C858E;
+$green: #95C7A4;
+$tan: #F4EFDE;
+
+// typography
+	//imports
+@font-face {font-family: 'ThirstyScriptBlack';src: url('../fonts/293F77_0_0.eot');src: url('../fonts/293F77_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_0_0.woff') format('woff'),url('../fonts/293F77_0_0.ttf') format('truetype');} 
+@font-face {font-family: 'ThirstyScript-Bold';src: url('../fonts/293F77_1_0.eot');src: url('../fonts/293F77_1_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_1_0.woff') format('woff'),url('../fonts/293F77_1_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstyScriptLight';src: url('../fonts/293F77_2_0.eot');src: url('../fonts/293F77_2_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_2_0.woff') format('woff'),url('../fonts/293F77_2_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstyScriptExtrabold';src: url('../fonts/293F77_3_0.eot');src: url('../fonts/293F77_3_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_3_0.woff') format('woff'),url('../fonts/293F77_3_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstyScriptMedium';src: url('../fonts/293F77_4_0.eot');src: url('../fonts/293F77_4_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_4_0.woff') format('woff'),url('../fonts/293F77_4_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstyScriptRegular';src: url('../fonts/293F77_5_0.eot');src: url('../fonts/293F77_5_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_5_0.woff') format('woff'),url('../fonts/293F77_5_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstyScriptExtraboldShd';src: url('../fonts/293F77_6_0.eot');src: url('../fonts/293F77_6_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_6_0.woff') format('woff'),url('../fonts/293F77_6_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstyScriptLightShd';src: url('../fonts/293F77_7_0.eot');src: url('../fonts/293F77_7_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_7_0.woff') format('woff'),url('../fonts/293F77_7_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstyScriptBlackShd';src: url('../fonts/293F77_8_0.eot');src: url('../fonts/293F77_8_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_8_0.woff') format('woff'),url('../fonts/293F77_8_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstyScriptRegularShd';src: url('../fonts/293F77_9_0.eot');src: url('../fonts/293F77_9_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_9_0.woff') format('woff'),url('../fonts/293F77_9_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstyScriptMediumShd';src: url('../fonts/293F77_A_0.eot');src: url('../fonts/293F77_A_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_A_0.woff') format('woff'),url('../fonts/293F77_A_0.ttf') format('truetype');}
+@font-face {font-family: 'ThirstyScript-BoldShd';src: url('../fonts/293F77_B_0.eot');src: url('../fonts/293F77_B_0.eot?#iefix') format('embedded-opentype'),url('../fonts/293F77_B_0.woff') format('woff'),url('../fonts/293F77_B_0.ttf') format('truetype');}
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,700,900);
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+	//variables
+$playfair: 'Playfair Display', serif;
+$lato: 'Lato', sans-serif;
+$thirsty: 'ThirstyScriptBlack', serif;
+$thirstyLight: 'ThirstyScriptLight', serif;

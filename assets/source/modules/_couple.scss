@@ -1,0 +1,29 @@
+.couple	{
+	img	{
+		border-radius: 100%;
+		display: inline-block;
+		float: left;
+		height: 30%;
+		margin-right: 5%;
+		margin-bottom: 30px;
+		width: 30%;
+		&.last	{
+			margin-right: 0;
+		}
+	}
+	p {
+		strong	{
+			font-weight: bold;
+		}
+	}
+	span	{
+		&.intro	{
+		clear: both;
+		display: block;
+		font-style: italic;
+		font-weight: 100;
+		font-size: 32px;
+		text-align: center;
+		}
+	}
+}
